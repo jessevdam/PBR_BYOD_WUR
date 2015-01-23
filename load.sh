@@ -1,0 +1,1 @@
+tdbloader -loc ./snpdata --graph=http://pbr.wur.nl/SNP ./snps.n3
