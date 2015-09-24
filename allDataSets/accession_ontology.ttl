@@ -1,0 +1,248 @@
+@prefix : <http://rdf.biosemantics.org/2015/0/byod_plant_traits_rawdata/> .
+@prefix trait: <http://rdf.biosemantics.org/owl/2015/0/byod_plant_traits#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+<http://rdf.biosemantics.org/2015/0/byod_plant_traits_rawdata/> a owl:Ontology .
+
+
+# categories
+:plant_characteristics a owl:DatatypeProperty .
+:plant_characteristics rdfs:subPropertyOf trait:trait_value .
+:plant_characteristics rdfs:label "Plant characteristics" .
+
+:leaf_characteristics a owl:DatatypeProperty .
+:leaf_characteristics rdfs:subPropertyOf trait:trait_value .
+:leaf_characteristics rdfs:label "Leaf characteristics" .
+
+:flowering_characteristics a owl:DatatypeProperty .
+:flowering_characteristics rdfs:subPropertyOf trait:trait_value .
+:flowering_characteristics rdfs:label "Flowering characteristics" .
+
+:fruit_characteristics a owl:DatatypeProperty .
+:fruit_characteristics rdfs:subPropertyOf trait:trait_value .
+:fruit_characteristics rdfs:label "Fruit characteristics" .
+
+:fruit_disorders a owl:DatatypeProperty .
+:fruit_disorders rdfs:subPropertyOf trait:trait_value .
+:fruit_disorders rdfs:label "Fruit disorders" .
+
+:physiological_characteristics a owl:DatatypeProperty .
+:physiological_characteristics rdfs:subPropertyOf trait:trait_value .
+:physiological_characteristics rdfs:label "Physiological characteristics" .
+
+:diseases a owl:DatatypeProperty .
+:diseases rdfs:subPropertyOf trait:trait_value .
+:diseases rdfs:label "Diseases" .
+
+:parasitization a owl:DatatypeProperty .
+:parasitization rdfs:subPropertyOf trait:trait_value .
+:parasitization rdfs:label "Parasitization" .
+
+
+# trait names
+:internode_length a owl:DatatypeProperty .
+:internode_length rdfs:subPropertyOf :plant_characteristics .
+:internode_length rdfs:label "internode length" .
+:growth_height a owl:DatatypeProperty .
+:growth_height rdfs:subPropertyOf :plant_characteristics .
+:growth_height rdfs:label "growth height" .
+:growth_habit a owl:DatatypeProperty .
+:growth_habit rdfs:subPropertyOf :plant_characteristics .
+:growth_habit rdfs:label "growth habit" .
+:stem_hairiness a owl:DatatypeProperty .
+:stem_hairiness rdfs:subPropertyOf :plant_characteristics .
+:stem_hairiness rdfs:label "stem hairiness" .
+:stem_thickness a owl:DatatypeProperty .
+:stem_thickness rdfs:subPropertyOf :plant_characteristics .
+:stem_thickness rdfs:label "stem thickness" .
+:foliage_cover a owl:DatatypeProperty .
+:foliage_cover rdfs:subPropertyOf :plant_characteristics .
+:foliage_cover rdfs:label "foliage cover" .
+:leaf_length a owl:DatatypeProperty .
+:leaf_length rdfs:subPropertyOf :leaf_characteristics .
+:leaf_length rdfs:label "leaf length" .
+:leaf_number a owl:DatatypeProperty .
+:leaf_number rdfs:subPropertyOf :leaf_characteristics .
+:leaf_number rdfs:label "leaf number" .
+:leaf_attitude a owl:DatatypeProperty .
+:leaf_attitude rdfs:subPropertyOf :leaf_characteristics .
+:leaf_attitude rdfs:label "leaf attitude" .
+:leaf_color a owl:DatatypeProperty .
+:leaf_color rdfs:subPropertyOf :leaf_characteristics .
+:leaf_color rdfs:label "leaf color" .
+:leaf_shape a owl:DatatypeProperty .
+:leaf_shape rdfs:subPropertyOf :leaf_characteristics .
+:leaf_shape rdfs:label "leaf shape" .
+:flower_color a owl:DatatypeProperty .
+:flower_color rdfs:subPropertyOf :flowering_characteristics .
+:flower_color rdfs:label "flower color" .
+:inflorescence_length a owl:DatatypeProperty .
+:inflorescence_length rdfs:subPropertyOf :flowering_characteristics .
+:inflorescence_length rdfs:label "inflorescence length" .
+:inflorescence_type a owl:DatatypeProperty .
+:inflorescence_type rdfs:subPropertyOf :flowering_characteristics .
+:inflorescence_type rdfs:label "inflorescence type" .
+:pedicel_jointlessness a owl:DatatypeProperty .
+:pedicel_jointlessness rdfs:subPropertyOf :flowering_characteristics .
+:pedicel_jointlessness rdfs:label "pedicel jointlessness" .
+:flowering_time_begin a owl:DatatypeProperty .
+:flowering_time_begin rdfs:subPropertyOf :flowering_characteristics .
+:flowering_time_begin rdfs:label "flowering time begin" .
+:fruit_setting_ability a owl:DatatypeProperty .
+:fruit_setting_ability rdfs:subPropertyOf :fruit_characteristics .
+:fruit_setting_ability rdfs:label "fruit setting ability" .
+:immature_fruit_color a owl:DatatypeProperty .
+:immature_fruit_color rdfs:subPropertyOf :fruit_characteristics .
+:immature_fruit_color rdfs:label "immature fruit color" .
+:mature_fruit_color a owl:DatatypeProperty .
+:mature_fruit_color rdfs:subPropertyOf :fruit_characteristics .
+:mature_fruit_color rdfs:label "mature fruit color" .
+:green_shoulder a owl:DatatypeProperty .
+:green_shoulder rdfs:subPropertyOf :fruit_characteristics .
+:green_shoulder rdfs:label "green shoulder" .
+:green_shoulder_2 a owl:DatatypeProperty .
+:green_shoulder_2 rdfs:subPropertyOf :fruit_characteristics .
+:green_shoulder_2 rdfs:label "green shoulder (2)" .
+:fruit_yellow_shoulder a owl:DatatypeProperty .
+:fruit_yellow_shoulder rdfs:subPropertyOf :fruit_characteristics .
+:fruit_yellow_shoulder rdfs:label "fruit yellow shoulder" .
+:fruit_shoulder_hardness a owl:DatatypeProperty .
+:fruit_shoulder_hardness rdfs:subPropertyOf :fruit_characteristics .
+:fruit_shoulder_hardness rdfs:label "fruit shoulder hardness" .
+:fruit_size a owl:DatatypeProperty .
+:fruit_size rdfs:subPropertyOf :fruit_characteristics .
+:fruit_size rdfs:label "fruit size" .
+:fruit_shape a owl:DatatypeProperty .
+:fruit_shape rdfs:subPropertyOf :fruit_characteristics .
+:fruit_shape rdfs:label "fruit shape" .
+:fruit_ribbing a owl:DatatypeProperty .
+:fruit_ribbing rdfs:subPropertyOf :fruit_characteristics .
+:fruit_ribbing rdfs:label "fruit ribbing" .
+:ribbing_at_calyx_end a owl:DatatypeProperty .
+:ribbing_at_calyx_end rdfs:subPropertyOf :fruit_characteristics .
+:ribbing_at_calyx_end rdfs:label "ribbing at calyx end" .
+:fruit_firmness a owl:DatatypeProperty .
+:fruit_firmness rdfs:subPropertyOf :fruit_characteristics .
+:fruit_firmness rdfs:label "fruit firmness" .
+:fruit_fleshiness a owl:DatatypeProperty .
+:fruit_fleshiness rdfs:subPropertyOf :fruit_characteristics .
+:fruit_fleshiness rdfs:label "fruit fleshiness" .
+:fruit_outerwall_thickness a owl:DatatypeProperty .
+:fruit_outerwall_thickness rdfs:subPropertyOf :fruit_characteristics .
+:fruit_outerwall_thickness rdfs:label "fruit outerwall thickness" .
+:locule_number a owl:DatatypeProperty .
+:locule_number rdfs:subPropertyOf :fruit_characteristics .
+:locule_number rdfs:label "locule number" .
+:fruit_section_shape a owl:DatatypeProperty .
+:fruit_section_shape rdfs:subPropertyOf :fruit_characteristics .
+:fruit_section_shape rdfs:label "fruit section shape" .
+:fruit_weight a owl:DatatypeProperty .
+:fruit_weight rdfs:subPropertyOf :fruit_characteristics .
+:fruit_weight rdfs:label "fruit weight" .
+:blossem-end_rot a owl:DatatypeProperty .
+:blossem-end_rot rdfs:subPropertyOf :fruit_disorders .
+:blossem-end_rot rdfs:label "blossem-end rot" .
+:blotchy_ripening a owl:DatatypeProperty .
+:blotchy_ripening rdfs:subPropertyOf :fruit_disorders .
+:blotchy_ripening rdfs:label "blotchy ripening" .
+:fruit_puffiness a owl:DatatypeProperty .
+:fruit_puffiness rdfs:subPropertyOf :fruit_disorders .
+:fruit_puffiness rdfs:label "fruit puffiness" .
+:fruit_cracking_tendency a owl:DatatypeProperty .
+:fruit_cracking_tendency rdfs:subPropertyOf :fruit_disorders .
+:fruit_cracking_tendency rdfs:label "fruit cracking tendency" .
+:relative_growth_rate a owl:DatatypeProperty .
+:relative_growth_rate rdfs:subPropertyOf :physiological_characteristics .
+:relative_growth_rate rdfs:label "relative growth rate" .
+:vigor a owl:DatatypeProperty .
+:vigor rdfs:subPropertyOf :physiological_characteristics .
+:vigor rdfs:label "vigor" .
+:harvest_time_begin a owl:DatatypeProperty .
+:harvest_time_begin rdfs:subPropertyOf :physiological_characteristics .
+:harvest_time_begin rdfs:label "harvest time begin" .
+:tobacco_mosaic_virus a owl:DatatypeProperty .
+:tobacco_mosaic_virus rdfs:subPropertyOf :diseases .
+:tobacco_mosaic_virus rdfs:label "Tobacco Mosaic Virus" .
+:tomato_yellow_leaf_curl_virus a owl:DatatypeProperty .
+:tomato_yellow_leaf_curl_virus rdfs:subPropertyOf :diseases .
+:tomato_yellow_leaf_curl_virus rdfs:label "Tomato Yellow Leaf Curl Virus" .
+:pepino_mosaic_virus a owl:DatatypeProperty .
+:pepino_mosaic_virus rdfs:subPropertyOf :diseases .
+:pepino_mosaic_virus rdfs:label "Pepino Mosaic Virus" .
+:cladosporium a owl:DatatypeProperty .
+:cladosporium rdfs:subPropertyOf :diseases .
+:cladosporium rdfs:label "Cladosporium" .
+:cladosporium_2 a owl:DatatypeProperty .
+:cladosporium_2 rdfs:subPropertyOf :diseases .
+:cladosporium_2 rdfs:label "Cladosporium (2)" .
+:fusarium_wilt a owl:DatatypeProperty .
+:fusarium_wilt rdfs:subPropertyOf :diseases .
+:fusarium_wilt rdfs:label "Fusarium wilt" .
+:powdery_mildew a owl:DatatypeProperty .
+:powdery_mildew rdfs:subPropertyOf :diseases .
+:powdery_mildew rdfs:label "powdery mildew" .
+:root_rot_resistance a owl:DatatypeProperty .
+:root_rot_resistance rdfs:subPropertyOf :diseases .
+:root_rot_resistance rdfs:label "root rot (resistance)" .
+:stem_rot a owl:DatatypeProperty .
+:stem_rot rdfs:subPropertyOf :diseases .
+:stem_rot rdfs:label "stem rot" .
+:bacterial_canker a owl:DatatypeProperty .
+:bacterial_canker rdfs:subPropertyOf :diseases .
+:bacterial_canker rdfs:label "Bacterial canker" .
+:broomrape a owl:DatatypeProperty .
+:broomrape rdfs:subPropertyOf :parasitization .
+:broomrape rdfs:label "broomrape" .
+
+# methods
+:broomrape rdfs:comment "1=short, 3=medium, 5=long" .
+:internode_length rdfs:comment "1=small, 3=medium, 5=tall" .
+:growth_height rdfs:comment "1=determinate, 2=semi-determinate, 3=indeterminate, 4=mixture" .
+:growth_habit rdfs:comment "1=absent, 2=very low, 3=low, 4=medium, 5=high" .
+:stem_hairiness rdfs:comment "1=thin, 3=medium, 5=thick" .
+:stem_thickness rdfs:comment "1=low, 3=medium, 5=good" .
+:foliage_cover rdfs:comment "1=short, 3=medium, 5=long" .
+:leaf_length rdfs:comment "1=4_6, 2=7_8, 3=9_10, 4=11_12, 5=13_16" .
+:leaf_number rdfs:comment "1=drooping, 3=horizontal, 5=erect" .
+:leaf_attitude rdfs:comment "1=light, 3=intermediate, 5=dark" .
+:leaf_color rdfs:comment "1=potato leaf type, 2=standard, 3=other" .
+:leaf_shape rdfs:comment "1=yellow, 2=white, 3=mixture" .
+:flower_color rdfs:comment "1=short, 3=medium, 5=long" .
+:inflorescence_length rdfs:comment "1=1, 2=2, 3=>2" .
+:inflorescence_type rdfs:comment "1=absent, 2=present, 3=mixture, " .
+:pedicel_jointlessness rdfs:comment "1=early, 3=Sonatine, 5=late" .
+:flowering_time_begin rdfs:comment "1=low, 3=medium, 5=high" .
+:fruit_setting_ability rdfs:comment "1=pale, 2=not pale (=green), 3=light green, 4=medium, 5=dark green" .
+:immature_fruit_color rdfs:comment "1=yellow green, 2=orange, 3=pink, 4=red, 5=other" .
+:mature_fruit_color rdfs:comment "1=absent, 2=present, 3=mixture" .
+:green_shoulder rdfs:comment "1=absent, 3=moderate, 5=high" .
+:green_shoulder_2 rdfs:comment "1=absent, 2=very low, 3=low, 4=medium, 5=high" .
+:fruit_yellow_shoulder rdfs:comment "1=low, 3=medium, 5=high" .
+:fruit_shoulder_hardness rdfs:comment "1=small, 3=medium, 5=large" .
+:fruit_size rdfs:comment "1=flat, 3=medium, 5=long" .
+:fruit_shape rdfs:comment "1=absent, 3=moderate, 5=high" .
+:fruit_ribbing rdfs:comment "1=weak, 3=moderate, 5=strong" .
+:ribbing_at_calyx_end rdfs:comment "1=low, 3=medium, 5=high" .
+:fruit_firmness rdfs:comment "1=low, 3=medium, 5=high" .
+:fruit_fleshiness rdfs:comment "1=<=2, 2=3 - 4, 3=5, 4=6 - 7, 5=>=8" .
+:fruit_outerwall_thickness rdfs:comment "1=2, 2=4, 3=6, 4=8, 5=>8" .
+:locule_number rdfs:comment "1=round, 3=angular, 5=irregular" .
+:fruit_section_shape rdfs:comment "1=<100, 2=100 - 150, 3=150 - 200, 4=200 - 250, 5=>250" .
+:fruit_weight rdfs:comment "1=absent, 2=present, 3=severe" .
+:blossem-end_rot rdfs:comment "1=absent, 2=present" .
+:blotchy_ripening rdfs:comment "1=absent, 3=medium, 5=high" .
+:fruit_puffiness rdfs:comment "1=absent, 3=medium, 5=high" .
+:fruit_cracking_tendency rdfs:comment "1=<=0.06, 2=<=0.08, 3=<=0.10, 4=<=0.11, 5=>0.11" .
+:relative_growth_rate rdfs:comment "1=low, 3=medium, 5=high" .
+:vigor rdfs:comment "1=min 4 weeks, 2=min 2, 3=Sonatine, 4=plus 2, 5=plus 3 weeks" .
+:harvest_time_begin rdfs:comment "1=absent, 2=present" .
+:tobacco_mosaic_virus rdfs:comment "1=susceptible, 2=segregating" .
+:tomato_yellow_leaf_curl_virus rdfs:comment "1=susceptible, 2=resistant" .
+:pepino_mosaic_virus rdfs:comment "1=S (natural infection), 2=S (race 2.4.5.9.11), 3=R (race 2.4.5.9.11)" .
+:cladosporium rdfs:comment "1=Cf2, 2=Cf3, 3=Cf4, 4=Cf5, 5=Cf9" .
+:cladosporium_2 rdfs:comment "1=susceptible, 2=intermediate, 3=resistant" .
+:fusarium_wilt rdfs:comment "1=susceptible, 3=intermediate, 5=resistant" .
+:powdery_mildew rdfs:comment "1=low-medium, 2=fairly high" .
+:root_rot_resistance rdfs:comment "1=susceptible, 2=resistant" .
+:stem_rot rdfs:comment "1=susceptible, 3=intermediate, 5=resistant" .
+:bacterial_canker rdfs:comment "1=susceptible, 2=resistant" .
